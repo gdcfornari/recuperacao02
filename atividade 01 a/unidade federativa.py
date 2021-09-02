@@ -2,11 +2,7 @@ class UnidadeFederativa:
     def __init__(self):
         self.sigla= ''
         self.nome= ''
-
-    def principal(self):
-        estadoSelecionado = str(input("Escreva uma sigla"))
-
-        lista = [["Acre","AC"],
+        self.lista = [["Acre","AC"],
                            ["Alagoas", "AL"],
                            ["Amapá", "AP"],
                            ["Amazonas", "AM"],
@@ -34,8 +30,15 @@ class UnidadeFederativa:
                            ["Tocantins", "TO"],
                            ["Distrito Federal", "DF"]]
 
-        for i in lista:
+    def principal(self):
+        estadoSelecionado = str(input("Escreva uma sigla"))
+        for i in self.lista:
             if(estadoSelecionado == i[1]):
                 print("A sigla e o estado digitados foram: " + str(i))
 
-UnidadeFederativa().principal()
+    def listar_todos_estados(self):
+        return self.lista
+
+unidade_federativa = UnidadeFederativa()
+unidade_federativa.principal()
+print(unidade_federativa.listar_todos_estados())

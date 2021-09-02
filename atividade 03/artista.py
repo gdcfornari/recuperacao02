@@ -3,3 +3,4 @@ class Artista:
         self.nome = ''
         self.cpf = ''
         self.discos = ''
+

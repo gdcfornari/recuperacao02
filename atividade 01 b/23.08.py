@@ -7,6 +7,6 @@ class Soma:
             result = result + numero
         return result
 
-bytearray = [5,4,3]
+bytearray = [5,8,3]
 resultado = Soma.calcula(bytearray)
 print(resultado)
