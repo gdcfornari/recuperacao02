@@ -10,7 +10,7 @@ class Main:
         self.agenda.set_ano(2021)
 
     def mostrar_menu(self):
-        print('')
+        print('Escolha uma opção')
         print('=========================')
         print('AGENDA DA FORNARI')
         print('=========================')
